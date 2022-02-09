@@ -2,4 +2,47 @@ body
 {
 	background-color: #222;
 	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+*
+{
+	user-select: none;
+}
+
+.cover
+{
+	position: absolute;
+	display: flex;
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.25) 100%);
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes animatein 
+{
+	from
+	{
+		color: #fff0;
+	}
+	to
+	{
+		color:#ffff;
+	}
+}
+
+p
+{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40vh;
+	color:white;
+
+	animation-duration: 3s;
+	animation-name: animatein;
+
 }
