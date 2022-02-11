@@ -14,14 +14,49 @@ body
 .cover
 {
 	position: absolute;
-	display: flex;
 	background: rgb(0,0,0);
 	background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.25) 100%);
 	width: 100vw;
 	height: 100vh;
 	z-index: 100;
+}
+
+.centerflex
+{
+	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.panelscontainer
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap:2vh;
+}
+
+.text { color:white; }
+.bodyfont { font-family: 'Roboto', sans-serif; }
+.displayfont { font-family: 'Bebas Neue', cursive; }
+.bodytext { font-size:3vh; }
+
+.bigtext
+{
+	font-size: 40vh;
+	text-align: center; 
+	animation-duration: 3s;
+	animation-name: animatein;
+}
+
+.prettypanel
+{
+	background-color: #000a;
+	padding: 2vh 2vh;
+	border-radius: 1.5vh;
+	backdrop-filter: blur(6px);
+	animation-duration: 3s;
+	animation-name: animateinpanel;
 }
 
 @keyframes animatein 
@@ -36,13 +71,16 @@ body
 	}
 }
 
-p
+@keyframes animateinpanel
 {
-	font-family: 'Bebas Neue', cursive;
-	font-size: 40vh;
-	color:white;
-
-	animation-duration: 3s;
-	animation-name: animatein;
-
+	from
+	{
+		color: #fff0;
+		background-color: #0000;
+	}
+	to
+	{
+		color:#ffff;
+		background-color: #000a;
+	}
 }

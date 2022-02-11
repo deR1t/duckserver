@@ -52,7 +52,12 @@ function rnd(min, max)
 }
 
 document.body.style.backgroundImage = "url(duckimages/" + Math.round( rnd(1, 21) ) + ".jpg)"
-console.log(document.body.style.backgroundImage)
+document.getElementById("serverMap").innerHTML = "We are playing: ttt_placeholder_epic_ducky_map_v3";
+
+function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, lang, gamemodeNice )
+{
+	document.getElementById("serverMap").innerHTML = "We are playing: " + mapname;
+}
 
 setInterval(() => {
 
