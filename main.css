@@ -59,6 +59,15 @@ body
 	animation-name: animateinpanel;
 }
 
+.youcanplayaudio
+{
+	color: #fff0;
+	font-size: 2vh;
+	font-weight:100;
+	animation-fill-mode: forwards;
+	animation-duration: 1.5s;
+}
+
 @keyframes animatein 
 {
 	from
@@ -82,5 +91,17 @@ body
 	{
 		color:#ffff;
 		background-color: #000a;
+	}
+}
+
+@keyframes animateinalert
+{
+	from
+	{
+		color: #fff0;
+	}
+	to
+	{
+		color:#ffff;
 	}
 }
